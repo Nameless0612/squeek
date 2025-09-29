@@ -4,7 +4,7 @@ from tensorflow.keras import layers
 
 # Load datasets with auto split
 train_ds = tf.keras.utils.image_dataset_from_directory(
-    "MoreReduced",
+    "DataReduced",
     labels="inferred",
     label_mode="categorical",
     image_size=(128, 128),
@@ -15,7 +15,7 @@ train_ds = tf.keras.utils.image_dataset_from_directory(
 )
 
 val_ds = tf.keras.utils.image_dataset_from_directory(
-    "MoreReduced",
+    "DataReduced",
     labels="inferred",
     label_mode="categorical",
     image_size=(128, 128),
